@@ -1,0 +1,51 @@
+$xl: 1600px
+$lg: 1200px
+$md: 992px
+$sm: 768px
+$xs: 576px
+
+
+.headerContainer
+  background:  rgba(255,255,255,0.08)
+  position: absolute
+  z-index: 15
+
+  top: 44%
+  width: 100%
+  transform: translateY(-50%)
+  @media screen and (max-width: $md)
+    position: relative
+
+
+.headerContainer
+  padding: 0 44px
+  color-text: rgba(187, 50, 50, 0.05), 
+  @media screen and (max-width: $sm)
+    padding: 0 !important
+
+
+        font-size: 30px !important
+
+.forms 
+    margin-bottom: 1vh 
+    padding-left: 1em 15em
+    cursor: pointer
+    width: 80%
+    text-align: left
+
+.vl 
+  border-left: 2px solid black
+  height: 100%
+  position: absolute
+  left: 40%
+  margin-top: 64px
+  margin-left: -3px
+  top: 0
+
+.colContainer
+  margin: 0 !important
+  @media screen and (max-width: $md)
+    height: auto()
+    position: relative
+    margin: 10vh 0
+    justify-content: center

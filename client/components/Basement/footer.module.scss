@@ -1,0 +1,103 @@
+// Author: Kozhevnikov Dmitrii
+// Login: xkozhe00
+
+.footer {
+    z-index: 1;
+    background: #f0f0f0;
+    height: auto;
+    width: auto;
+    font-family: "Mukta Vaani";
+    padding-top: 40px;
+    color: gray;
+}
+
+.footerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footerContent h3 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+    color: gray;
+}
+
+.footerContent p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.socialsText {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 0;
+    @media screen and (max-width: 510px) {
+        display: block;
+    }
+}
+
+.socialsText li {
+    margin: 0 25px;
+}
+
+.socialsText a {
+    text-decoration: none;
+    color: gray;
+    transition: color .4s ease;
+}
+
+.socialsText a:hover {
+    color: aqua;
+}
+
+.socialsIcons {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0 0;
+}
+
+.socialsIcons li {
+    margin: 0 15px;
+}
+
+.socialsIcons a {
+    text-decoration: none;
+    color: gray;
+    transition: color .4s ease;
+}
+
+.socialsIcons a:hover {
+    color: aqua;
+}
+
+.footerBottom {
+    background: #f0f0f0;
+    width: auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerBottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footerBottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}

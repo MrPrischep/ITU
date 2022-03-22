@@ -1,0 +1,12 @@
+node_modules
+build
+api/public/uploads
+api/node_modules
+client/node_modules
+.idea
+package-lock.json
+api/package-lock.json
+client/package-lock.json
+api/.env
+api/sessions
+api/temp

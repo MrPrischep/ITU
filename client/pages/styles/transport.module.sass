@@ -1,0 +1,84 @@
+// Author: Kozhevnikov Dmitrii
+// Login: xkozhe00
+
+$xl: 1600px
+$lg: 1200px
+$md: 992px
+$sm: 768px
+$xs: 576px
+
+.trans
+    background: #5d83b6   
+
+.title
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.mainContainer 
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+.radioButtons 
+    width: 80%
+    margin: 0 auto
+    text-align: center
+
+.customRadio input 
+    display: none
+
+.radioBtn 
+    margin: 10px
+    width: 180px
+    height: 200px
+    border: 3px solid transparent
+    display: inline-block
+    border-radius: 10px
+    position: relative
+    text-align: center
+    box-shadow: 0 0 20px #c3c3c367
+    cursor: pointer
+
+.radioBtn > i 
+    color: #ffffff
+    background-color: #5d83b6
+    font-size: 20px
+    position: absolute
+    top: -15px
+    left: 50%
+    transform: translateX(-50%) scale(4)
+    border-radius: 50px
+    padding: 3px
+    transition: 0.2s
+    pointer-events: none
+    opacity: 0
+
+.radioBtn .transportIcon 
+    width: 80px
+    height: 80px
+    position: absolute
+    top: 40%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.radioBtn .transportIcon i 
+    color: #5d83b6
+    line-height: 80px
+    font-size: 60px
+
+.radioBtn .transportIcon h3 
+    color: #5d83b6
+    font-size: 16px
+    font-weight: 400
+    text-transform: uppercase
+
+.customRadio input[type="radio"]:checked + .radioBtn 
+    border: 3px solid #5d83b6
+
+.customRadio input[type="radio"]:checked + .radioBtn > i 
+    opacity: 1
+    transform: translateX(-50%) scale(1)

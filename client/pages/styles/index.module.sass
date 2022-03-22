@@ -1,0 +1,114 @@
+// Author: Pastushenko Vladislav
+// Login: xpastu04
+
+$xl: 1600px
+$lg: 1200px
+$md: 992px
+$sm: 768px
+$xs: 576px
+
+
+.videoContainer
+  position: relative
+  height: 100vh
+  overflow: hidden
+  color: white
+  @media screen and (max-width: $md)
+    height: initial
+
+
+.myVideo, .videoOverlay
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+
+
+.videoOverlay
+  background-color: rgba(60, 60, 60, 0.40)
+
+.videoContainerNavigatorContainer
+  height: 64
+  line-height: 48px
+
+  z-index: 10
+  width: 100%
+
+.headerContainer
+  position: absolute
+  z-index: 15
+  top: 44%
+  width: 100%
+  transform: translateY(-50%)
+  @media screen and (max-width: $md)
+    position: relative
+
+
+.headerContainer
+  padding: 0 44px
+
+  @media screen and (max-width: $sm)
+    padding: 0 !important
+    font-size: 30px !important
+
+
+
+.colContainer
+  margin: 0 !important
+  @media screen and (max-width: $md)
+    height: auto()
+    position: relative
+    margin: 10vh 0
+    padding: 5rem 0
+    justify-content: center
+
+
+.secondSection
+  background: white
+  position: relative
+  padding-top: 3.3rem
+
+
+
+.card
+  border-radius: .7rem
+  border: 1px solid #f0f0f0
+  padding: 2em
+  box-shadow: 0 0 6px rgba(0,0,0,0.1)
+
+
+.cardLinkHeader
+  font-weight: 700
+  cursor: pointer
+  position: relative
+  display: inline-block
+  white-space: nowrap
+  &::after
+      content: ''
+      background-color: #d0d0d0
+      position: absolute
+      width: 100%
+      height: 2px
+      bottom: 0
+      left: 0
+
+  &:hover::after
+      background-color: #a0a0a0
+
+
+.cardIcon
+  color: white
+  transform: translateY(8px)
+  margin-left: 2rem
+
+.flexBlockCenterItems
+  display: flex
+  align-items: center
+  height: 100%
+  width: 100%
+  padding: 0, 1.5em
+
+
+.blocks
+  font-weight: 700

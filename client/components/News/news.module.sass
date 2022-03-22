@@ -1,0 +1,83 @@
+// Author: Pastushenko Vladislav
+// Login: xpastu04
+.carouselContainer
+    min-height: 30rem
+    color: #000
+    max-width: 100%
+    overflow: hidden
+
+.overflowContainer
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    overflow: hidden
+
+.carouselImageContainer
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 30rem
+    height: 30rem
+    border-radius: 50%
+    color: #fff
+    overflow: hidden
+    z-index: 1
+
+
+.overlay,
+.carouselImage
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: inherit
+
+.overlay
+    background: rgba(0, 0, 0, 0.3)
+
+.carouselImage
+    -o-object-fit: cover
+    object-fit: cover
+    background: #292929 no-repeat 50%
+    background-size: cover
+    z-index: -2
+    background-image: url('/tram.jpg')
+
+
+.carouselItem
+    position: absolute
+    top: 50%
+    width: 60%
+    transition: 0.3s
+    transform: translate(-50%, -50%)
+
+.carouselItemDate
+    font-weight: 300
+
+.carouselItemText
+    font-weight: 700
+    cursor: pointer
+    &:hover
+        color: #e0e0e0
+
+.hoverForBlack
+    &:hover
+        color: #606060
+
+
+.carouselControllers
+    color: white
+    position: absolute
+    bottom: 5%
+    left: 50%
+    transform: translateX(-50%)
+
+.carouselControllersItem
+    cursor: pointer
+    transition: .2s
+    &:hover
+        color: #d0d0d0

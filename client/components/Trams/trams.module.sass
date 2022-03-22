@@ -1,0 +1,60 @@
+// Author: Pastushenko Vladislav
+// Login: xpastu04
+.container
+    height: 600px
+    position: relative
+    overflow: hidden
+
+.contentContainer
+    position: absolute
+    width: 800px
+    height: 100%
+    left: 50%
+    transform: translateX(-50%)
+    overflow: hidden
+
+.myVideo
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+
+
+
+@mixin animate($animation,$duration,$method,$times)
+    animation: $animation $duration $method $times
+
+@mixin keyframes($name)
+    @keyframes #{$name}
+        @content
+
+.trams
+    white-space: nowrap
+    left: 0px
+    top: 0
+    position: absolute
+    border-right: 60px solid white
+    @include keyframes(shift)
+        0%
+            border-left: 0px solid white
+        50%
+            border-left: 30px solid white
+        100%
+            border-left: 0px solid white
+    @include animate(shift, 1.5s, linear, infinite)
+
+.line1
+    animation-delay: 0
+
+.line2
+    animation-delay: .75S
+
+.line3
+    animation-delay: 0
+
+.line4
+    animation-delay: .75S
+
+.line5
+    animation-delay: 0

@@ -1,0 +1,81 @@
+// Author: Pastushenko Vladislav
+// Login: xpastu04
+
+$lg: 1200px;
+$md: 992px;
+
+
+.navigator {
+    padding: 1em 22px 0 22px;
+}
+
+.navigatorRightItem,
+.navigatorItem,
+.menuForMobilesCol {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.navigatorItem {
+    border-right: 2px solid;
+    cursor: pointer;
+    &:hover::after {
+        width: 60%;
+        transition: all .4s;
+        left: 20%;
+    }
+
+    &::after {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        margin-top: .75rem;
+        transition: all .3s;
+        background: rgba(200, 200, 200, 0.5);
+    }
+
+    @media screen and (max-width: $md) {
+        display: none;
+    }
+}
+
+
+.navigatorLink {
+    color: white;
+    &:hover {
+        color: white;
+    }
+}
+
+.navigatorRightItem {
+    margin-left: auto;
+}
+
+.navigatorRightLink {
+    color: white;
+    white-space: nowrap;
+
+    &:hover {
+        transition: all 0.3s;
+        color:  #c7c7c7;
+    }
+}
+
+.menuForMobilesCol {
+    @media screen and (min-width: $md) {
+        display: none !important;
+    }
+}
+
+.mobileMenuItem {
+    background: none;
+    font-weight: 200;
+    font-size: 1.2em;
+    margin-right: 1.3em;
+    margin-left: 0.3em;
+}
