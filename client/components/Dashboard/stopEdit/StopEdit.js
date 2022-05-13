@@ -1,6 +1,3 @@
-// Author: Kozhevnikov Dmitrii
-// Login: xkozhe00
-
 import React from "react";
 import {connect} from "react-redux";
 import styles from "./stopEdit.module.sass"
