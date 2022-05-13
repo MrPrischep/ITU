@@ -1,6 +1,3 @@
-// Author: Kozhevnikov Dmitrii
-// Login: xkozhe00
-
 import React from "react";
 import {connect} from "react-redux";
 import {Modal, Form, Input, Select, Button, message} from "antd"
