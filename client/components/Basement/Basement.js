@@ -1,6 +1,3 @@
-// Author: Kozhevnikov Dmitrii
-// Login: xkozhe00
-
 import React from "react";
 import styles from './footer.module.scss'
 import Link from 'next/link'
