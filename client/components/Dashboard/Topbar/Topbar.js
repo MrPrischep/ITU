@@ -1,6 +1,3 @@
-// Author: Kozhevnikov Dmitrii
-// Login: xkozhe00
-
 import React from "react";
 import styles from "./topbar.module.sass"
 import { message, Modal,} from 'antd'
