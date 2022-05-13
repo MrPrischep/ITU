@@ -1,6 +1,3 @@
-// Author: Kozhevnikov Dmitrii
-// Login: xkozhe00
-
 import React, {useState} from "react";
 import {connect} from "react-redux";
 import ReactDOM from "react-dom";
