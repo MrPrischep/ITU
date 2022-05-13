@@ -1,6 +1,3 @@
-// Author: Pastushenko Vladislav
-// Login: xpastu04
-
 import React from "react";
 import { Row, Col, Dropdown, Menu} from "antd";
 import styles from './navigator.module.scss'
