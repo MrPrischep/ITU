@@ -1,6 +1,3 @@
-// Author: Kozhevnikov Dmitrii
-// Login: xkozhe00
-
 import React from "react";
 import ReactDOM from "react-dom";
 import 'antd/dist/antd.min.css';
