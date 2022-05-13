@@ -1,6 +1,3 @@
-// Author: Kozhevnikov Dmitrii
-// Login: xkozhe00
-
 import React from "react";
 import Head from 'next/head';
 import Api from "../Api";
